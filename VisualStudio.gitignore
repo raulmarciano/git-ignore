@@ -23,8 +23,12 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
+[Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -61,6 +65,9 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
 # StyleCop
 StyleCopReport.xml
 
@@ -68,6 +75,7 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
+*_i.h
 *.ilk
 *.meta
 *.obj
@@ -127,6 +135,9 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
+# JustCode is a .NET coding add-in
+.JustCode
+
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -177,6 +188,12 @@ publish/
 *.pubxml
 *.publishproj
 
+# TODO: Un-comment the next line if you do not want to checkin 
+# your web deploy settings because they may include unencrypted
+# passwords
+#*.pubxml
+*.publishproj
+
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
 # checkin your Azure Web App publish settings, but sensitive information contained
 # in these scripts will be unencrypted
@@ -220,11 +237,13 @@ _pkginfo.txt
 !?*.[Cc]ache/
 
 # Others
+[Ss]tyle[Cc]op.*
 ClientBin/
 ~$*
 *~
 *.dbmdl
 *.dbproj.schemaview
+node_modules/
 *.jfm
 *.pfx
 *.publishsettings
@@ -348,3 +367,15 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
+
+# LightSwitch generated files
+GeneratedArtifacts/
+ModelManifest.xml
